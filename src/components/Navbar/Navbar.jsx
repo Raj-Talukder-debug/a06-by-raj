@@ -8,7 +8,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     return (
       <nav>
-        <div className="flex justify-between  md:justify-around  items-center shadow-sm px-15 py-4 md:p-4">
+        <div className="flex justify-between  md:justify-around  items-center shadow-sm p-4">
           <span
             onClick={() => setOpen(!open)}
             className="flex  gap-4 cursor-pointer  "
