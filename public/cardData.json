@@ -1,0 +1,112 @@
+[
+  {
+    "id": "ai-001",
+    "name": "Linguist Pro",
+    "description": "Real-time AI translation and localization for websites and applications with 99% accuracy.",
+    "price": 29.0,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["100+ Languages", "API Access", "Contextual Accuracy"],
+    "icon": "https://i.ibb.co.com/vxx6jPR9/design-tool.png"
+  },
+  {
+    "id": "ai-002",
+    "name": "Visionary Edit",
+    "description": "Automated video editing tool that cuts long-form content into viral social media clips.",
+    "price": 49.0,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Auto-Captioning", "Face Tracking", "One-click Resize"],
+    "icon": "https://i.ibb.co.com/C5bc6tH1/operation.png"
+  },
+  {
+    "id": "ai-003",
+    "name": "CodeWhisperer Plus",
+    "description": "An advanced AI pair programmer that suggests entire blocks of code in real-time.",
+    "price": 150.0,
+    "period": "yearly",
+    "tag": "Top Rated",
+    "tagType": "popular",
+    "features": ["Unit Test Generation", "Security Scanning", "Multi-IDE Support"],
+    "icon": "https://i.ibb.co.com/hxDkVBHV/portfolio.png"
+  },
+  {
+    "id": "ai-004",
+    "name": "SynthVoice AI",
+    "description": "Convert text to ultra-realistic human speech for podcasts and narrations.",
+    "price": 19.0,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["500+ AI Voices", "Emotion Control", "Commercial Rights"],
+    "icon": "https://i.ibb.co.com/RkmfdZd8/rocket.png"
+  },
+  {
+    "id": "ai-005",
+    "name": "DesignGenix",
+    "description": "AI-powered UI/UX design assistant that generates wireframes from text prompts.",
+    "price": 199.0,
+    "period": "one-time",
+    "tag": "Editor's Choice",
+    "tagType": "best-seller",
+    "features": ["Figma Integration", "Auto-Layout", "Design System Sync"],
+    "icon": "https://i.ibb.co.com/pjCqLhMq/social-media.png"
+  },
+  {
+    "id": "ai-006",
+    "name": "MarketMind",
+    "description": "Predictive analytics tool for e-commerce to forecast trends and inventory needs.",
+    "price": 89.0,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": ["Competitor Tracking", "Demand Forecasting", "PDF Reports"],
+    "icon": "https://i.ibb.co.com/gMkf5Wws/writing-2327400-1.png"
+  },
+  {
+    "id": "ai-007",
+    "name": "LegalEagle AI",
+    "description": "Scans contracts for high-risk clauses and suggests legal improvements instantly.",
+    "price": 599.0,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Risk Analysis", "Template Library", "E-Sign Integration"],
+    "icon": "https://i.ibb.co.com/gMkf5Wws/writing-2327400-1.png"
+  },
+  {
+    "id": "ai-008",
+    "name": "CopyFlow",
+    "description": "Bulk content generator for SEO blogs, product descriptions, and ad copy.",
+    "price": 35.0,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Plagiarism Checker", "SEO Optimization", "WordPress Plugin"],
+    "icon": "https://i.ibb.co.com/gMkf5Wws/writing-2327400-1.png"
+  },
+  {
+    "id": "ai-009",
+    "name": "HealthBot Pro",
+    "description": "White-label AI chatbot for clinics to handle patient scheduling and triage.",
+    "price": 45.0,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["HIPAA Compliant", "24/7 Support", "Calendar Sync"],
+    "icon": "https://i.ibb.co.com/gMkf5Wws/writing-2327400-1.png"
+  },
+  {
+    "id": "ai-010",
+    "name": "LogoMagic",
+    "description": "Create professional vector logos and brand kits in seconds using neural networks.",
+    "price": 50.0,
+    "period": "one-time",
+    "tag": "Budget Friendly",
+    "tagType": "new",
+    "features": ["Vector Export", "Full Branding Kit", "Social Media Assets"],
+    "icon": "https://i.ibb.co.com/gMkf5Wws/writing-2327400-1.png"
+  }
+]

@@ -5,7 +5,7 @@ import banner from '../../../assets/products/banner.png'
 
 const Banner = () => {
     return (
-      <div className="mt-[60px] container mx-auto flex justify-center gap-20 items-center">
+      <div className="mt-[60px] container mx-auto flex flex-col md:flex-row justify-center gap-20 items-center px-5">
         <div className="left space-y-4 ">
           <div className="flex gap-2 items-center border-none bg-gradient-to-r from-[#4F39F6]/15 to-[#4F39F6]/20 rounded-full w-fit px-4 py-2 text-xl">
             <img className="w-5 h-5" src={round} alt="" />
@@ -14,11 +14,11 @@ const Banner = () => {
             </p>
           </div>
 
-          <div className="space-y-4">
-            <h1 className="font-bold text-[70px] leading-[1.1]  max-w-[700px]">
+          <div className="space-y-6 md:space-y-4 ">
+            <h1 className="font-bold text-2xl md:text-[70px] leading-[1.1]  md:max-w-[700px]">
               Supercharge Your <br /> Digital Workflow
             </h1>
-            <p className="text-[#627382] text-xl font-medium  leading-[1.5] max-w-[520px]">
+            <p className="text-[#627382] text-xl font-medium  leading-[1.5] md:max-w-[520px]">
               Access premium AI tools, design assets, templates, and
               productivity software—all in one place. Start creating faster
               today. Explore Products
@@ -36,8 +36,8 @@ const Banner = () => {
             {/* </div> */}
           </div>
         </div>
-        <div className="right w-[400px] ">
-            <img src={banner} alt="" />
+        <div className="right w-[400px] hidden md:block  ">
+            <img className='' src={banner} alt="" />
         </div>
       </div>
     );
