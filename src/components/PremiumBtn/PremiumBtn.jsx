@@ -8,7 +8,7 @@ const PremiumBtn = ({ dataAi, cart, setCart }) => {
   return (
     <div className="container mx-auto p-20 ">
       <div className="text-center space-y-4">
-        <h2 className="font-bold text-5xl">Premium Digital Tools</h2>
+        <h2 className="font-bold text-2xl md:text-5xl">Premium Digital Tools</h2>
         <p className="max-w-lg mx-auto text-[#627382]">
           Choose from our curated collection of premium digital products
           designed to boost your productivity and creativity.

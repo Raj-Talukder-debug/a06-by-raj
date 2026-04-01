@@ -20,7 +20,7 @@ const CardBody = ({ data, cart, setCart }) => {
           <img src={icon} alt="" />
         </div>
         <div className="flex justify-between">
-          <h2 className="text-3xl font-bold">{name}</h2>
+          <h2 className="text-xl md:text-3xl font-bold">{name}</h2>
         </div>
         <p className="text-[#627382] font-medium">{description}</p>
 

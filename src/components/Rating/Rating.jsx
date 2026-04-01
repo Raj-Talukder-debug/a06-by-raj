@@ -2,7 +2,7 @@ import React from 'react';
 
 const Rating = () => {
     return (
-      <div className="  bg-gradient-to-r from-[#4F39F6] to-[#9514FA] grid grid-cols-3  p-8 mt-10">
+      <div className=" hidden bg-gradient-to-r from-[#4F39F6] to-[#9514FA] md:grid grid-cols-3 p-8 mt-10 ">
         <div className="md:text-center text-white">
           <h2 className="font-semibold text-3xl">50k+</h2>
           <p>Active Users</p>
