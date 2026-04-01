@@ -8,6 +8,7 @@ import Features from './components/Features/Features';
 import { Suspense, useState,  } from 'react';
 import { ToastContainer } from 'react-toastify';
 import Pricing from './components/Pricing/Pricing';
+import Footer from './components/Footer/Footer';
 function App() {
 
   const dataAi = fetch('/cardData.json')
@@ -27,6 +28,7 @@ function App() {
 
       <Features></Features>
       <Pricing></Pricing>
+      <Footer></Footer>
 
       {/* Toast */}
       <ToastContainer></ToastContainer>
