@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <Navbar dataAi={dataAi}></Navbar>
+      <Navbar cart={cart} setCart={setCart} dataAi={dataAi}></Navbar>
       <Banner dataAi={dataAi}></Banner>
       <Rating></Rating>
       <Suspense

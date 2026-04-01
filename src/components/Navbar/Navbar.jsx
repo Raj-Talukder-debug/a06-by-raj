@@ -4,7 +4,8 @@ import { LuShoppingCart } from 'react-icons/lu';
 import DigiTool from '../../../assets/products/DigiTools.png'
 import { IoMdClose } from 'react-icons/io';
 
-const Navbar = ({ dataAi, }) => {
+const Navbar = ({ dataAi, cart, setCart }) => {
+  console.log(cart);
   const [open, setOpen] = useState(false);
   return (
     <nav>
@@ -50,9 +51,17 @@ const Navbar = ({ dataAi, }) => {
         </ul>
 
         <div className="flex gap-4 items-center">
-          <p className="flex items-center font-semibold gap-4">
-            <LuShoppingCart></LuShoppingCart> Login
-          </p>
+          <div className="flex items-center font-semibold gap-4">
+            <div className="relative">
+              <LuShoppingCart className="text-2xl"></LuShoppingCart>
+              {cart.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-600 text-white text-[10px] h-5 w-5 flex items-center justify-center rounded-full border-2 border-white ">
+                  {cart.length}
+                </span>
+              )}
+            </div>
+            <span>Login</span>
+          </div>
           <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
             Get Started
           </button>

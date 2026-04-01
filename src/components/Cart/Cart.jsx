@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
 const Cart = ({ cart, setCart}) => {
-console.log(cart);
+// console.log(cart);
 const handleRemove = (name) => {
     const updatedCard = cart.filter(item => item.name != name );
     setCart(updatedCard);
