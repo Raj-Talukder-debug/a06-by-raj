@@ -4,11 +4,12 @@ import Navbar from './components/Navbar/Navbar';
 import Banner from './components/Banner/Banner';
 import Rating from './components/Rating/Rating';
 import PremiumBtn from './components/PremiumBtn/PremiumBtn';
-import { Suspense } from 'react';
+import { Suspense, useState,  } from 'react';
 function App() {
 
-  const dataAi = fetch('../public/cardData.json')
+  const dataAi = fetch('/cardData.json')
     .then(res => res.json())
+  const [cart, setCart] = useState([]);
 
   return (
     <>
@@ -18,7 +19,11 @@ function App() {
       <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
-        <PremiumBtn dataAi={dataAi}></PremiumBtn>
+        <PremiumBtn
+         cart={cart}
+         setCart={setCart}
+          dataAi={dataAi}
+        ></PremiumBtn>
       </Suspense>
     </>
   );

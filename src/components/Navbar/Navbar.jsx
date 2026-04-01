@@ -4,7 +4,7 @@ import { LuShoppingCart } from 'react-icons/lu';
 import DigiTool from '../../../assets/products/DigiTools.png'
 import { IoMdClose } from 'react-icons/io';
 
-const Navbar = ({ dataAi }) => {
+const Navbar = ({ dataAi, }) => {
   const [open, setOpen] = useState(false);
   return (
     <nav>

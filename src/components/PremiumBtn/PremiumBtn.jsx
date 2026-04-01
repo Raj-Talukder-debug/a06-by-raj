@@ -1,8 +1,10 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useState } from 'react';
 import Card from '../Card/Card';
 import Cart from '../Cart/Cart';
 
-const PremiumBtn = ({ dataAi }) => {
+const PremiumBtn = ({ dataAi, cart, setCart }) => {
+  const [selectedtype, setSelectedType] = useState("Products");
+
   return (
     <div className="container mx-auto p-20 ">
       <div className="text-center space-y-4">
@@ -13,19 +15,25 @@ const PremiumBtn = ({ dataAi }) => {
         </p>
       </div>
       <div className="flex items-center justify-center p-4">
-        <button className="btn rounded-r-none rounded-l-xl text-white bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+        <button
+          onClick={() => setSelectedType("Products")}
+          className={`btn rounded-r-none rounded-l-xl  ${selectedtype === "Products" ? "text-white bg-gradient-to-r from-[#4F39F6] to-[#9514FA]" : "bg-white text-black"}`}
+        >
           Products
         </button>
-        <button className="btn rounded-l-none rounded-r-xl text-black">
-          Cart (2)
+        <button
+          onClick={() => setSelectedType("something")}
+          className={`btn rounded-l-none rounded-r-xl ${selectedtype === "something" ? "text-white bg-gradient-to-r from-[#4F39F6] to-[#9514FA]" : "bg-white  text-black"}`}
+        >
+          Cart {cart.length}
         </button>
       </div>
-      <Suspense
-        fallback={<span className="loading loading-spinner loading-xl"></span>}
-      >
-        <Card dataAi={dataAi}></Card>
-      </Suspense>
-      <Cart></Cart>
+
+      {selectedtype === "Products" ? (
+        <Card cart={cart} setCart={setCart} dataAi={dataAi}></Card>
+      ) : (
+        <Cart cart={cart}></Cart>
+      )}
     </div>
   );
 };
