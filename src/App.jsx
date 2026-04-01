@@ -5,6 +5,7 @@ import Banner from './components/Banner/Banner';
 import Rating from './components/Rating/Rating';
 import PremiumBtn from './components/PremiumBtn/PremiumBtn';
 import { Suspense, useState,  } from 'react';
+import { ToastContainer } from 'react-toastify';
 function App() {
 
   const dataAi = fetch('/cardData.json')
@@ -19,12 +20,11 @@ function App() {
       <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
-        <PremiumBtn
-         cart={cart}
-         setCart={setCart}
-          dataAi={dataAi}
-        ></PremiumBtn>
+        <PremiumBtn cart={cart} setCart={setCart} dataAi={dataAi}></PremiumBtn>
       </Suspense>
+
+      {/* Toast */}
+      <ToastContainer></ToastContainer>
     </>
   );
 }

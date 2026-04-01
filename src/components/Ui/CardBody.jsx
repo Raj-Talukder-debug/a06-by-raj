@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const CardBody = ({ data, cart, setCart }) => {
-  const { name, tag, icon, description, features } = data;
+  const { name, tag, icon, description, features, price } = data;
   const [isBuy, setIsBuy] = useState(false);
   console.log(isBuy)
  
@@ -25,7 +25,7 @@ const CardBody = ({ data, cart, setCart }) => {
         <p className="text-[#627382] font-medium">{description}</p>
 
         <h2 className="font-bold text-xl">
-          $29/<span className="font-normal text-[#627382]">Mo</span>{" "}
+          ${price}/<span className="font-normal text-[#627382]">Mo</span>{" "}
         </h2>
 
         <ul className="mt-6 flex flex-col gap-2 text-xs">

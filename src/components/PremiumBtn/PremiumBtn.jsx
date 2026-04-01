@@ -32,7 +32,7 @@ const PremiumBtn = ({ dataAi, cart, setCart }) => {
       {selectedtype === "Products" ? (
         <Card cart={cart} setCart={setCart} dataAi={dataAi}></Card>
       ) : (
-        <Cart cart={cart}></Cart>
+        <Cart cart={cart} setCart={setCart}></Cart>
       )}
     </div>
   );
