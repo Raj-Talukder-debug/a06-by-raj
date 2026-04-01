@@ -4,8 +4,10 @@ import Navbar from './components/Navbar/Navbar';
 import Banner from './components/Banner/Banner';
 import Rating from './components/Rating/Rating';
 import PremiumBtn from './components/PremiumBtn/PremiumBtn';
+import Features from './components/Features/Features';
 import { Suspense, useState,  } from 'react';
 import { ToastContainer } from 'react-toastify';
+import Pricing from './components/Pricing/Pricing';
 function App() {
 
   const dataAi = fetch('/cardData.json')
@@ -22,6 +24,9 @@ function App() {
       >
         <PremiumBtn cart={cart} setCart={setCart} dataAi={dataAi}></PremiumBtn>
       </Suspense>
+
+      <Features></Features>
+      <Pricing></Pricing>
 
       {/* Toast */}
       <ToastContainer></ToastContainer>
